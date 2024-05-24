@@ -1,0 +1,570 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    ::-webkit-scrollbar {
+        @apply rounded-full lg:rounded-none bg-primary-400 w-1 md:w-auto;
+    }
+
+    ::-webkit-scrollbar-thumb {
+    @apply h-1/4 rounded-[10px] border-[none] bg-secundary-100;
+    }
+
+    .gradient-1 {
+        @apply bg-gradient-to-b from-primary-100 to-primary-200;
+    }
+
+    .gradient-2 {
+        @apply bg-gradient-to-b from-primary-200 to-primary-300;
+    }
+
+    .gradient-3 {
+        @apply bg-gradient-to-b from-primary-300 to-primary-400;
+    }
+
+    .gradient-4 {
+        @apply bg-gradient-to-b from-primary-400 to-primary-300;
+    }
+
+    .gradient-5 {
+        @apply bg-gradient-to-b from-primary-300 to-primary-200;
+    }
+
+    .gradient-6 {
+        @apply bg-gradient-to-b from-primary-200 to-primary-100;
+    }
+
+    .section .section-inner {
+        @apply px-6 md:px-32 lg:px-44 2xl:px-52;
+    }
+    
+    .section.landing-page-section .section-inner {
+        @apply h-screen grid grid-cols-2 gap-x-10 ;
+    }
+    
+    .text-description-extra-small {
+        @apply text-xs 2xl:text-sm leading-relaxed  md:text-center;
+    }
+
+    .text-description-small {
+        @apply text-sm 2xl:text-[16px] leading-relaxed;
+    }
+
+    .text-description-medium {
+        @apply text-xl lg:text-2xl 2xl:text-3xl font-body flex justify-center lg:justify-center font-bold;
+    }
+
+    .text-description-large {
+        @apply text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl font-black flex justify-center lg:justify-start;
+    }
+
+    .rectangle-detail {
+        @apply w-28 lg:w-48 h-1.5 bg-secundary-100 rounded-full mt-2 mb-12;
+    }
+
+
+    .social-media-button {
+        @apply flex items-center justify-center w-8 h-8 2xl:h-10 2xl:w-10 rounded-full;
+    }
+
+    /* Social Medias */
+    .fab-container {
+        @apply fixed z-[999] cursor-pointer right-7 bottom-7 hidden md:block;
+      }
+      .fab-icon-holder {
+        @apply w-[50px] h-[50px] shadow-[0_6px_20px_rgba(0,0,0,0.2)] rounded-[100%];
+      }
+      .fab-icon-holder i {
+        @apply flex items-center justify-center h-full text-white;
+        font-style: 25px;
+      }
+      .fab {
+        @apply w-[55px] h-[55px] rotate-[0] transition-all duration-[0.4s] hover:rotate-[270deg] bg-secundary-100;
+      }
+      .fab-options {
+        @apply list-none absolute opacity-0 transition-all duration-[0.3s] ease-[ease] origin-[80%_bottom] m-0 scale-0 right-0 bottom-[70px];
+      }
+      .fab-options:hover,
+      .fab:hover + .fab-options {
+        @apply opacity-100 scale-100;
+      }
+      .fab-options .fab-li {
+        @apply flex justify-end p-[5px];
+      }
+      .fab-label {
+        @apply self-center select-none whitespace-nowrap text-base text-white shadow-[0_6px_20px_rgba(0,0,0,0.2)] mr-2.5 px-[5px] py-0.5 rounded-[3px];
+        background: #666;
+      }
+      .floating-link {
+        @apply no-underline;
+      }
+     /* Social Medias */
+
+};
+
+
+@layer components {
+
+    /* Option Menu */
+    .floating-scrollspy {
+    @apply block fixed left-[22px] bottom-5 md:bottom-1/2 md:transform md:translate-y-1/2;
+    }
+
+    .floating-scrollspy-background {
+        @apply bg-white shadow-lg rounded-full z-50;
+    }
+
+    .floating-scrollspy .nav {
+    @apply flex md:block px-6 py-2 md:px-1 md:py-6 space-x-1 md:space-x-0 md:space-y-2;
+    }
+
+    .floating-scrollspy .nav-link {
+    @apply block leading-[0] text-[0] p-[5px];
+    }
+
+    .floating-scrollspy .nav-link span {
+    @apply hidden;
+    }
+
+    .floating-scrollspy .nav-link i {
+    @apply w-10 h-10 2xl:w-12 2xl:h-12 flex items-center justify-center opacity-50 transition-[0.1s] duration-[all] ease-[ease-in-out] mx-auto rounded-[50%];
+    }
+
+    .floating-scrollspy .nav-link.active i,
+    .floating-scrollspy .nav-link:hover i {
+    @apply w-10 h-10 2xl:w-12 2xl:h-12 flex items-center justify-center opacity-100 bg-secundary-100 text-white shadow-lg;
+    }
+    /* Option Menu */
+
+    /* Backgrounds */
+    .backgrounds {
+        @apply absolute h-screen w-screen object-cover z-10;
+    }
+
+    .background-poligones {
+        @apply backgrounds top-0 lg:-top-20 opacity-25;
+    }
+
+    .background-grid {
+        @apply backgrounds opacity-5 z-0;
+    }
+
+    .background-waves-2-top {
+        @apply backgrounds -top-10 lg:-top-60 right-0 opacity-5 z-10;
+    }
+
+    .background-waves-2-bottom {
+        @apply backgrounds lg:-bottom-20 right-0 opacity-5 z-10;
+    }
+
+    .background-lines-1 {
+        @apply backgrounds hidden lg:block opacity-10 z-10;
+    }
+
+    .background-lines-2 {
+        @apply backgrounds hidden lg:block opacity-5 z-10;
+    }
+    
+    .background-mobile {
+        @apply backgrounds lg:hidden top-0 opacity-15 z-10;
+    }
+    /* Backgrounds */
+
+    /* Section 1: Parliamentary Profile */
+    .image-parliamentary {
+        @apply w-[200px] h-[200px] md:w-[400px] md:h-[400px] 2xl:h-[500px] 2xl:w-[500px] 3xl:w-[600px] 3xl:h-[600px] rounded-full shadow-xl object-cover object-center z-20 ;
+    }
+    
+    .detail-circle-parliamentary {
+        @apply absolute image-rotate  z-30 top-0;
+    }
+    
+    .section-photo-profile {
+        @apply col-span-2 lg:col-span-1 flex items-center justify-center relative pt-16 lg:pt-0;
+    }
+    
+    .detail-politic-party {
+        @apply border-white rounded-full object-cover absolute top-1/2 h-auto left-0 w-[30%] md:top-1/2 lg:bottom-[16%] lg:left-0 2xl:bottom-[16%] 3xl:left-0 transform -translate-x-1/2 z-40  lg:w-[20%] ;
+    }
+    
+    .section-text-profile {
+        @apply col-span-2 lg:col-span-1 flex flex-col items-center  justify-start lg:justify-center h-[400px] lg:h-full overflow-y-auto md:overflow-visible z-40 mb-20 md:mb-0;
+    }
+    /* Section 1: Parliamentary Profile */
+
+    /* Section 2: Legislative Productions */
+    .section-graph-legislative-production {
+        @apply col-span-2 lg:col-span-1 flex flex-col items-start justify-center relative pt-32 lg:pt-0;
+    }
+
+    .section-cards-legislative-production {
+        @apply col-span-2 lg:col-span-1 flex flex-col items-start justify-start lg:justify-center z-40 -mt-10 lg:mt-0;
+    }
+
+    .image-parliamentary-small {
+        @apply rounded-full h-12 w-12 object-cover object-center;
+    }
+
+    .image-parliamentary-extra-small {
+      @apply rounded-full h-8 w-8 object-cover object-center;
+  }
+
+
+    .grid-legislative-production {
+        @apply hidden md:grid md:grid-cols-2 gap-5 w-full z-20;
+    }
+
+    .card-legislative-productions {
+        @apply w-full h-full 2xl:h-60 z-10  p-3 lg:p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-200 dark:border-gray-100 flex flex-col items-center justify-center ;
+    }
+
+    .circle-icon-background {
+        @apply bg-gradient-to-b from-primary-100 to-primary-200 w-12 h-12 lg:w-16 lg:h-16 rounded-full flex justify-center items-center;
+    }
+
+    .botao-prev {
+        @apply absolute top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group-focus:outline-none
+    }
+
+    .botao-next {
+        @apply absolute top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group-focus:outline-none
+    }
+
+    .button-popover {
+        @apply z-40 bg-white h-4 w-4 rounded-full bg-opacity-40 flex items-center justify-center
+    }
+
+    .popover-body {
+        @apply absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600
+    }
+    /* Section 2: Legislative Productions */
+
+    /* Section 3: Galery Parliamentary */
+    .section-galery-parliamentary {
+        @apply col-span-2 flex flex-col items-start justify-center lg:justify-center relative pt-32 md:pt-0 lg:pt-20;
+    }
+
+    .card {
+        @apply relative h-96 md:h-96 overflow-hidden cursor-pointer rounded-b-2xl;
+    }
+
+    .intro {
+        @apply absolute h-[115px] md:h-[115px] w-[full] overflow-hidden text-graylight bg-white rounded-t-3xl  transition-[10s] duration-[ease-in-out] px-5 bottom-0 ;
+    }
+
+    .card:hover .intro {
+        @apply h-3/4 bg-white bottom-0 text-graylight;
+    }
+
+    .card:hover .text-p {
+        @apply opacity-100 visible;
+    }
+
+    .card:hover img {
+        @apply -rotate-3 scale-110;
+    }
+
+    .photo-gallery {
+        @apply transition-transform duration-[1s] ease-[ease-in-out]  h-full w-[450px] md:w-full lg:h-[400px] object-center object-cover;
+    }
+
+    .grid-gallery-photos {
+        @apply grid grid-cols-3 w-full gap-x-5; 
+    }
+
+    .grid-gallery-photos-2 {
+        @apply flex-col lg:flex-row gap-10 lg:gap-5 2xl:gap-10 items-center  lg:h-auto overflow-y-auto lg:-mt-12;
+    }
+
+    .section-galery-parliamentary-2 {
+        @apply col-span-2 flex flex-col items-start justify-center lg:justify-center relative mt-20;
+    }
+
+
+    .grid-gallery-testimonials {
+        @apply  w-full gap-10;
+    }
+
+
+
+    /* Section 3: Galery Parliamentary */
+
+
+
+    /* Section 4: Testimonials */
+    .icons {
+  @apply inline-block h-[600px] w-screen relative align-top z-0;
+}
+.icon-container {
+  @apply items-center bg-white bg-center bg-no-repeat shadow-[0_5px_40px_0_rgba(23,28,33,0.13),0_20px_13px_0_rgba(23,28,33,0.05)] flex justify-center opacity-100 h-36 mt-[-25px] absolute w-36 ml-[76px] rounded-[50%] z-0;
+  -webkit-box-align: center; 
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: floating;
+  animation-name: floating;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  -webkit-transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+  transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+  animation-duration: 4s;
+}
+
+.icon-container2 {
+    @apply items-center bg-center bg-no-repeat shadow-[0_5px_40px_0_rgba(23,28,33,0.13),0_20px_13px_0_rgba(23,28,33,0.05)] flex justify-center opacity-100 h-12 mt-[-25px] absolute w-12 ml-[76px] rounded-[50%] z-0;
+    -webkit-box-align: center; 
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: floating;
+    animation-name: floating;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+    transition: margin 1s cubic-bezier(0.2, 0.6, 0.3, 1), opacity 2s ease;
+    animation-duration: 4s;
+  }
+
+
+@keyframes floating {
+  0% {
+    -webkit-transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+    transform: translateY(8px) rotate3d(0, 0, 1, 3deg);
+  }
+  100% {
+    -webkit-transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+    transform: translateY(-8px) rotate3d(0, 0, 1, 0deg);
+  }
+}
+.icon {
+  @apply w-[200px] h-[200px] bg-center bg-cover rounded-full z-0;
+}
+
+.icon-g {
+    @apply w-[300px] h-[300px] bg-center bg-cover rounded-full z-0;
+  }
+
+.google {
+  @apply h-[200px] absolute w-[200px] ml-[76px] mt-5 bg-blue-600 z-0;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+}
+.microsoft {
+  @apply h-[300px] absolute delay-[0.7s] w-[300px] ml-[600px] mt-[140px] z-0;
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transition-delay: 0.7s;
+}
+.bitbucket {
+  @apply h-[200px] absolute delay-[0.2s] w-[200px] ml-[300px] mt-[200px] z-0;
+  -webkit-animation-delay: -2.2s;
+  animation-delay: -2.2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transition-delay: 0.2s;
+}
+
+.ubuntu {
+  @apply h-[200px] absolute delay-[0.1s] w-[200px] ml-[1000px] mt-[38px] z-0;
+  -webkit-animation-delay: -1.8s;
+  animation-delay: -1.8s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transition-delay: 0.1s;
+}
+
+.digitalocean {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[400px] mt-[50px] z-0;
+    -webkit-animation-delay: -2.9s;
+    animation-delay: -2.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.6s;
+  }
+
+  .digitalocean2 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[900px] mt-[157px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean3 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-0 mt-[407px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean4 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-40 mt-[300px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+  .digitalocean5 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[1090px] mt-[300px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean6 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[1290px] mt-[50px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean7 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[1490px] mt-[200px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean8 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[520px] mt-[200px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean9 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] ml-[320px] mt-[360px] z-0; 
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean10 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] -ml-[120px] mt-[160px] z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+  .digitalocean11 {
+    @apply h-[75px] absolute delay-[0.6s] w-[75px] mt-3 z-0;
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-transition-delay: 0.7s;
+  }
+
+
+  .chartdiv {
+    @apply w-full h-[500px]
+  }
+
+
+
+
+
+
+.twitter {
+    @apply h-[200px] absolute delay-[0.2s] w-[200px] ml-[1200px] mt-[250px] z-0;
+  -webkit-animation-delay: -2.2s;
+  animation-delay: -2.2s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-transition-delay: 0.2s;
+}
+
+
+};
+
+@layer utilities {
+
+    .image-rotate {
+        @apply transition-transform duration-[3.5s] ease-[ease-in-out];
+      }
+
+    /* Graph Legislative Productions */
+    .rectangle {
+        @apply float-left h-3 lg:h-6 2xl:h-[35px] w-0 transition-[width] duration-[2s] ease-[ease-in-out] rounded-full mr-2 2xl:mr-4 mb-3 bg-secundary-100;
+        -webkit-transition: width 2s ease-in-out;
+        -moz-transition: width 2s ease-in-out;
+        -o-transition: width 2s ease-in-out;
+    }
+      
+    .bar:after {
+        @apply table content-[''] clear-both;
+    }
+
+    .counter {
+        @apply float-left text-xl lg:text-2xl 2xl:text-3xl before:inline font-black -mt-1.5 lg:mt-0;
+    }
+
+    .grow {
+        @apply grow-0
+    }
+
+    .grow .category1 .rectangle {
+        @apply w-[82%];
+    }
+    .grow .category2 .rectangle {
+        @apply w-[65%];
+    }
+      
+    .grow .category3 .rectangle {
+        @apply w-[58%];
+    }
+      
+    .grow .category4 .rectangle {
+        @apply w-[32%];
+    }
+      
+    .grow .category5 .rectangle {
+        @apply w-[65%];
+    }
+    /* Graph Legislative Productions */
+
+
+
+};

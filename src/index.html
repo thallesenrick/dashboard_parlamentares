@@ -1,0 +1,1347 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links css-->
+    <link href="./output.css" rel="stylesheet">
+    <link href="animation.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <!--Links JS: Scrollable Sections-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/8bd6d6f50f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="graphs-production-legislative.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+    <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/hierarchy.js"></script>
+    <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+
+    
+</head>
+<body>
+  <div class="section-container ">
+    <div class="fab-container">
+      <div class="fab fab-icon-holder">
+          <i class="fa fa-plus"></i>
+      </div>
+
+      <ul class="fab-options">
+          <li class="fab-li">
+
+              <div class="fab-icon-holder bg-gradient-to-b from-[#0866FF] to-[#123979]">
+                  <a class="floating-link" href="https://facebook.com/"> <i class="fa fa-facebook"></i></a>
+              </div>
+          </li>
+          <li class="fab-li">
+
+              <div class="fab-icon-holder bg-gradient-to-b from-[#C408B8] via-[#FF3F32] to-[#FFC600]">
+                  <a class="floating-link" href="https://instagram.com/"> <i class="fa fa-instagram"></i></a>
+              </div>
+          </li>
+          <li class="fab-li">
+
+              <div class="fab-icon-holder bg-gradient-to-b from-black to-[#242424]">
+                  <a class="floating-link" href="https://instagram.com/"> <i class="fa-brands fa-x-twitter"></i></a>
+              </div>
+          </li>
+          <li class="fab-li">
+
+              <div class="fab-icon-holder bg-gradient-to-b from-[#4AAE20] to-[#51ce1b]">
+                  <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+          </li>
+      </ul>
+  </div>
+    <section id="section_parliamentary_profile" class="section landing-page-section gradient-1 relative overflow-hidden">
+        <img src="images/backgrounds/background-poligones.png" class="background-poligones" alt="background-poligonos">
+        <img src="images/backgrounds/background-wave2.png" class="background-waves-2-top rotate-180" alt="background-poligonos">
+        <img src="images/backgrounds/lines-1.png" class="background-lines-1 rotate-180" alt="background-lines" >
+        <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+        <div class="section-inner z-50 text-white">
+          <div class="section-photo-profile z-50">
+            <div class="h-max relative slide-in-bottom">
+              <img src="images/psdb/foto.jpg" class="image-parliamentary" alt="foto-parlamentar">
+              <!-- <div class="image-parliamentary bg-secundary-100 flex justify-center items-center">
+                <i class="fa-thin fa-user-tie-hair text-7xl md:text-[200px]"></i>
+              </div> -->
+              <img src="images/backgrounds/detail-circles-parliamentary.svg" class="detail-circle-parliamentary" alt="detail-circles-parliamentary" id="rotatingImage">
+              <img src="images/logos-political-parties/logo_party_psdb.jpg" class="detail-politic-party" alt="detail-politic-party">
+              <div class="absolute bottom-0 z-50 flex justify-center w-full left-1/2 transform -translate-x-1/2 ">
+                <div class="flex flex-col justify-center items-center bg-white py-2 px-8 lg:px-12 lg:py-3 rounded-full shadow-lg">
+                  <p class="text-primary-100 text-xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold">00000</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+            <div class="section-text-profile">
+                <h2 class="text-description-medium slide-in-left">
+                    Olá eu sou
+                </h2>
+                <p class="text-description-large slide-in-left ">
+                    Matheus Fernandes
+                  </p>
+                  <div class="flex justify-center lg:justify-start">
+                    <div class="rectangle-detail slide-in-left">
+                    </div>
+                  </div>
+
+                 
+                  <div class="space-y-5 mr-2">
+                    <p class="text-description-small slide-in-bottom">
+                      Matheus Fernandes, nascido em 1945 em Caetés, um pequeno município no nordeste do Brasil, 
+                      foi o 35º presidente do país, ocupando o cargo de 2003 a 2010. Matheus cresceu em uma família pobre 
+                      e trabalhou como operário metalúrgico e sindicalista antes de entrar para a política. Ele se destacou 
+                      como líder sindical durante os anos 70, liderando greves importantes. Em 1980, co-fundou o Partido dos 
+                      Trabalhadores (PT), tornando-se uma figura central na luta contra a ditadura militar. Ele concorreu à 
+                      presidência várias vezes antes de ser eleito em 2002, sendo o primeiro presidente operário do Brasil.
+                    </p>
+                    <p class="text-description-small slide-in-bottom">
+                      No governo, Matheus Fernandes implementou políticas que buscavam reduzir a pobreza e a desigualdade social, 
+                      como o programa Bolsa Família. Seu mandato também foi marcado por um crescimento econômico notável, 
+                      com o Brasil emergindo como uma potência global.
+                    </p>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section_legislative_productions" class="section landing-page-section gradient-2 relative overflow-hidden">
+      <img src="images/backgrounds/background-wave1.png" class="background-waves-2-bottom z-0" alt="background-poligonos">
+      <img src="images/backgrounds/background-wave2.png" class="background-waves-2-bottom z-0" alt="background-poligonos" >
+      <img src="images/backgrounds/background-grid.png" alt="background-grid" class="background-grid">
+      <img src="images/backgrounds/lines-1.png" class="background-lines-1 transform scale-x-[-1] z-0" alt="background-lines" >
+      <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+      <div class="block absolute right-6 lg:right-10 top-6 lg:top-10 z-40">
+        <div class="flex items-center text-right text-white gap-x-3">
+          <div>
+            <p class="font-bold text-sm">Matheus Fernandes </p>
+            <p class=" text-sm">00000 - PSDB</p>
+          </div>
+          <!-- <div class="image-parliamentary-small bg-secundary-100 flex justify-center items-center" data-popover-target="popover-profile-mobile-1">
+            <i class="fa-thin fa-user-tie-hair text-xl lg:text-2xl"></i>
+          </div> -->
+    
+                <div data-popover id="popover-profile-mobile-1" role="tooltip" class="absolute z-50 invisible inline-block md:hidden text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex flex-col items-start">
+                          <h5 class="font-semibold text-graylight dark:text-white mb-2">Siga nas Redes Sociais</h5>
+                          <div class="flex space-x-1.5">
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#0866FF] to-[#123979]">
+                                <a class="floating-link" href="https://facebook.com/"> <i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#C408B8] via-[#FF3F32] to-[#FFC600]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-black to-[#242424]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#4AAE20] to-[#51ce1b]">
+                                <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                          </div>
+                        <div class="flex items-center border-t-2 border-b-2 py-2 my-5 w-full">
+                          <div class="fab-icon-holder bg-primary-100">
+                            <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-solid fa-copy"></i></a>
+                        </div>
+                          <h5 class="font-semibold text-graylight dark:text-white ml-3">Copiar Link</h5>
+                        </div>
+                        <h5 class="font-semibold text-graylight dark:text-white mb-2">Escanei o QR CODE</h5>
+                        <img src="images/qr-code/qr-code-black.png " class="w-80" alt="">
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+          <img src="images/psdb/foto.jpg" class="image-parliamentary-small" alt="image-parliamentary-small">
+        </div>
+      </div>
+      <div class="section-inner z-50 text-white ">
+        <div class="section-graph-legislative-production">
+         
+          <div class="flex items-center justify-between w-full ">
+            <div class=" text-white">
+              <h2 class="text-description-medium  flex justify-start slide-in-left  z-30">
+                PRODUÇÕES LEGISLATIVAS
+              </h2>
+              <div class="rectangle-detail slide-in-left "></div>
+            </div>
+ 
+
+          </div>
+          <p class="text-description-small mb-6 -mt-6 md:mt-0 lg:mb-10">Este espaço visa mantê-lo informado sobre os principais desenvolvimentos políticos do seu candidato.</p>
+          <div class="graph text-white z-30 w-full">
+            <div class="bar category1">
+              <div class="flex items-center space-x-2 mb-1">
+                <h3 class="text-description-small">Requerimento</h3>
+                <button data-popover-target="popover-requeriments" type="button" class="button-popover"><i class="fa-duotone fa-question text-white text-[12px]"></i></button>
+                <div data-popover id="popover-requeriments" role="tooltip" class="absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex items-center">
+                        <div class="flex justify-start items-center">
+                          <h5 class="font-semibold text-graylight dark:text-white">Índice médio da quantidade de Requerimentos</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+                    <div id="radial-chart-requeriments"></div>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="rectangle"></div>
+              <span class="counter">241</span>
+            </div>
+
+            <div class="bar category2">
+              <div class="flex items-center space-x-2 mb-1">
+                <h3 class="text-description-small">Projeto de Resolução</h3>
+                <button data-popover-target="popover-draft-resolution" type="button" class="button-popover"><i class="fa-duotone fa-question text-white text-[12px]"></i></button>
+                <div data-popover id="popover-draft-resolution" role="tooltip" class="absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  
+                  <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex items-center">
+                        <div class="flex justify-start items-center">
+                          <h5 class="font-semibold text-graylight dark:text-white">Índice médio da quantidade de Projetos de Resolução</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+                    <div id="radial-chart-draft-resolution"></div>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="rectangle"></div>
+              <span class="counter">183</span>
+            </div>
+
+            <div class="bar category3">
+              <div class="flex items-center space-x-2 mb-1">
+                <h3 class="text-description-small">Emenda</h3>
+                <button data-popover-target="popover-amendment" type="button" class="button-popover"><i class="fa-duotone fa-question text-white text-[12px]"></i></button>
+                <div data-popover id="popover-amendment" role="tooltip" class="absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  
+                  <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex items-center">
+                        <div class="flex justify-start items-center">
+                          <h5 class="font-semibold text-graylight dark:text-white">Índice médio da quantidade de Emendas</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+                    <div id="radial-chart-amendment"></div>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="rectangle"></div>
+              <span class="counter">168</span>
+            </div>
+
+            <div class="bar category4">
+              <div class="flex items-center space-x-2 mb-1">
+                <h3 class="text-description-small">Moção</h3>
+                <button data-popover-target="popover-motion" type="button" class="button-popover"><i class="fa-duotone fa-question text-white text-[12px]"></i></button>
+                <div data-popover id="popover-motion" role="tooltip" class="absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex items-center">
+                        <div class="flex justify-start items-center">
+                          <h5 class="font-semibold text-graylight dark:text-white">Índice médio da quantidade de Moções</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+                    <div id="radial-chart-motion"></div>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="rectangle"></div>
+              <span class="counter">104</span>
+            </div>
+
+            <div class="bar category5">
+              <div class="flex items-center space-x-2 mb-1">
+                <h3 class="text-description-small">Projeto de Decreto Legislativo</h3>
+                <button data-popover-target="popover-legislative-decree" type="button" class="button-popover"><i class="fa-duotone fa-question text-white text-[12px]"></i></button>
+                <div data-popover id="popover-legislative-decree" role="tooltip" class="absolute z-50 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 w-80 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="max-w-sm w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex items-center">
+                        <div class="flex justify-start items-center">
+                          <h5 class="font-semibold text-graylight dark:text-white">Índice médio da quantidade de Projetos de Decreto Legislativo</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+                    <div id="radial-draft-resolution"></div>
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+              </div>
+              <div class="rectangle"></div>
+              <span class="counter">180</span>
+            </div>
+
+           
+            
+        
+
+
+          </div>
+        </div>
+        <div class="section-cards-legislative-production text-graylight">
+          <div id="controls-carousel" class="relative w-full block md:hidden" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="card-legislative-productions">
+                    <div class="flex justify-center items-center">
+
+                      <div class="circle-icon-background">
+                        <i class="fa-duotone fa-book-section text-2xl lg:text-7xl text-white"></i>
+                      </div>
+                    </div>
+                    <div class="space-y-3 mt-3">
+                      <h5 class="text-description-small font-bold">Propostas Legislativas</h5>
+                      <p class="text-description-extra-small opacity-80 text-center">De propria autoria</p>
+                      <p class="text-description-medium font-bold">530</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="card-legislative-productions">
+                    <div class="circle-icon-background">
+                      <i class="fa-duotone fa-check-to-slot text-2xl lg:text-7xl text-white"></i>
+                    </div>
+                    <div class="space-y-3 mt-3">
+                      <h5 class="text-description-small">Votações Nominais</h5>
+                      <p class="text-description-extra-small opacity-80 text-center">Em plenário</p>
+                      <p class="text-description-medium font-bold">165</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="card-legislative-productions">
+                    <div class="circle-icon-background">
+                      <i class="fa-duotone fa-microphone-stand text-2xl lg:text-7xl text-white"></i>
+                    </div>
+                    <div class="space-y-3 mt-3">
+                      <h5 class="text-description-small">Discursos</h5>
+                      <p class="text-description-extra-small opacity-80 text-center">Em plenário</p>
+                      <p class="text-description-medium font-bold">3200</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="card-legislative-productions">
+                    <div class="circle-icon-background">
+                      <i class="fa-duotone fa-landmark-flag text-2xl lg:text-7xl text-white"></i>
+                    </div>
+                    <div class="space-y-3 mt-3">
+                      <h5 class="text-description-small">Presença em Plenário</h5>
+                      <p class="text-description-extra-small opacity-80 text-center">Em plenário</p>
+                      <p class="text-description-medium font-bold">873</p>
+                    </div>
+                  </div>  
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute px-4 top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white">
+                  <i class="fa-solid fa-chevron-left text-white"></i>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute px-4 top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                  <i class="fa-solid fa-chevron-right text-white"></i>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+          </div>
+          <div class="grid-legislative-production slide-in-bottom">
+            <div class="card-legislative-productions">
+              <div class="circle-icon-background">
+                <i class="fa-duotone fa-book-section text-2xl text-white"></i>
+              </div>
+              <div class="space-y-3 mt-3">
+                <h5 class="text-description-small">Propostas Legislativas</h5>
+                <p class="text-description-extra-small opacity-80">De propria autoria</p>
+                <p class="text-description-medium font-bold">530</p>
+              </div>
+            </div>
+            <div class="card-legislative-productions">
+              <div class="circle-icon-background">
+                <i class="fa-duotone fa-check-to-slot text-2xl text-white"></i>
+              </div>
+              <div class="space-y-3 mt-3">
+                <h5 class="text-description-small">Votações Nominais</h5>
+                <p class="text-description-extra-small opacity-80">Em plenário</p>
+                <p class="text-description-medium font-bold">165</p>
+              </div>
+            </div>
+            <div class="card-legislative-productions">
+              <div class="circle-icon-background">
+                <i class="fa-duotone fa-microphone-stand text-2xl text-white"></i>
+              </div>
+              <div class="space-y-3 mt-3">
+                <h5 class="text-description-small">Discursos</h5>
+                <p class="text-description-extra-small opacity-80">Em plenário</p>
+                <p class="text-description-medium font-bold">3200</p>
+              </div>
+            </div>
+            <div class="card-legislative-productions">
+              <div class="circle-icon-background">
+                <i class="fa-duotone fa-landmark-flag text-2xl text-white"></i>
+              </div>
+              <div class="space-y-3 mt-3">
+                <h5 class="text-description-small">Presença em Plenário</h5>
+                <p class="text-description-extra-small opacity-80">Em plenário</p>
+                <p class="text-description-medium font-bold">873</p>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="section_galery_parliamentary" class="section landing-page-section gradient-3 relative overflow-hidden">
+      <img src="images/backgrounds/background-wave1.png" class="background-waves-2-top rotate-180 z-10" alt="background-poligonos">
+      <img src="images/backgrounds/background-wave2.png" class="background-waves-2-top rotate-180" alt="background-poligonos">
+      <img src="images/backgrounds/background-grid.png" alt="background-grid z-10" class="background-grid">
+      <img src="images/backgrounds/lines-2.png" class="background-lines-2 z-10" alt="background-lines" >
+      <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+      <div class="block absolute right-6 lg:right-10 top-6 lg:top-10 z-40">
+        <div class="flex items-center text-right text-white gap-x-3">
+          <div>
+            <p class="font-bold text-sm">Matheus Fernandes </p>
+            <p class=" text-sm">00000 - PSDB</p>
+          </div>
+          <!-- <div class="image-parliamentary-small bg-secundary-100 flex justify-center items-center" data-popover-target="popover-profile-mobile-2">
+            <i class="fa-thin fa-user-tie-hair text-xl lg:text-2xl"></i>
+          </div> -->
+    
+                <div data-popover id="popover-profile-mobile-2" role="tooltip" class="absolute z-50 invisible inline-block md:hidden text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex flex-col items-start">
+                          <h5 class="font-semibold text-graylight dark:text-white mb-2">Siga nas Redes Sociais</h5>
+                          <div class="flex space-x-1.5">
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#0866FF] to-[#123979]">
+                                <a class="floating-link" href="https://facebook.com/"> <i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#C408B8] via-[#FF3F32] to-[#FFC600]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-black to-[#242424]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#4AAE20] to-[#51ce1b]">
+                                <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                          </div>
+                        <div class="flex items-center border-t-2 border-b-2 py-2 my-5 w-full">
+                          <div class="fab-icon-holder bg-primary-100">
+                            <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-solid fa-copy"></i></a>
+                        </div>
+                          <h5 class="font-semibold text-graylight dark:text-white ml-3">Copiar Link</h5>
+                        </div>
+                        <h5 class="font-semibold text-graylight dark:text-white mb-2">Escanei o QR CODE</h5>
+                        <img src="images/qr-code/qr-code-black.png " class="w-80" alt="">
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+          <img src="images/psdb/foto.jpg" class="image-parliamentary-small" alt="image-parliamentary-small">
+        </div>
+      </div>
+      <div class="section-inner z-50 text-white ">
+        <div class="section-galery-parliamentary z-30">
+          <div class="md:-mt-40 lg:-mt-10 text-white">
+            <h2 class="text-description-medium  flex justify-start slide-in-left  z-30">
+              GALERIA DE FOTOS
+            </h2>
+            <div class="rectangle-detail slide-in-left "></div>
+          </div>
+          <p class="text-description-small -mt-5 mb-10 slide-in-left">Acompanhe a sessão onde você terá acesso exclusivo a imagens que retratam a jornada, atividades e momentos marcantes dos nossos representantes políticos.</p>
+
+          <div id="controls-carousel" class="relative w-full block md:hidden -mt-5" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-[550px] md:h-96 overflow-hidden rounded-lg">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div>
+                    <div class="bg-white h-12 w-full rounded-t-2xl">
+                      <div class="flex justify-between items-center h-12 px-3">
+                        <div class="flex items-center justify-center">
+                          <!-- <img src="images/photo-profile-parliamentary/photo-parliamentary.jpg" class="h-8 w-8 rounded-full object-cover" alt=""> -->
+                          <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                            <i class="fa-thin fa-user-tie-hair text-xl md:text-[200px]"></i>
+                          </div>
+                          <div class="ml-2">
+                            <p class="text-graylight text-xs font-bold">
+                                Matheus Fernandes
+                            </p>
+                            <p class="text-graylight text-[10px]">
+                              16/08/2023
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <i class="fa-regular fa-ellipsis text-graylight"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-0 shadow-2xl">
+                      <!-- <img class="photo-gallery" src="images/social-media-politic/social-media-default-1.jpeg" alt="Animated Card Hover Effect Html & CSS"> -->
+                      <div class="h-full w-full bg-primary-200 flex items-center justify-center">
+                        <i class="fa-thin fa-image text-7xl"></i>
+                      </div>
+                      <div class="intro">
+                        <div class="flex justify-between pt-3">
+                          <div class="flex gap-x-4">
+                            <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                            <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                            <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+        
+                          </div>
+                          <div>
+                            <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                          </div>
+                        </div>  
+                        <p class="font-bold h-[80px] text-description-small flex items-center">
+                          Lula conversa sobre políticas para as mulheres com ex-líderes do Chile, Costa Rica e Senegal
+                        </p>
+                        <p class="text-p text-sm">
+                          O presidente Luiz Inácio Lula da Silva, acompanhado da primeira dama, Janja Lula da Silva, recebeu, 
+                          na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                          ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                          Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div>
+                    <div class="bg-white h-12 w-full rounded-t-2xl">
+                      <div class="flex justify-between items-center h-12 px-3">
+                        <div class="flex items-center justify-center">
+                           <!-- <img src="images/photo-profile-parliamentary/photo-parliamentary.jpg" class="h-8 w-8 rounded-full object-cover" alt=""> -->
+                           <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                            <i class="fa-thin fa-user-tie-hair text-xl md:text-[200px]"></i>
+                          </div>
+                          <div class="ml-2">
+                            <p class="text-graylight text-xs font-bold">
+                                Matheus Fernandes
+                            </p>
+                            <p class="text-graylight text-[10px]">
+                              14/11/2023
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-ellipsis text-graylight"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-0 shadow-2xl">
+                      <!-- <img class="photo-gallery" src="images/social-media-politic/social-media-default-2.jpeg" alt="Animated Card Hover Effect Html & CSS"> -->
+                      <div class="h-full w-full bg-primary-200 flex items-center justify-center">
+                        <i class="fa-thin fa-image text-7xl"></i>
+                      </div>
+                      <div class="intro">
+                        <div class="flex justify-between pt-3">
+                          <div class="flex gap-x-4">
+                            <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                            <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                            <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+        
+                          </div>
+                          <div>
+                            <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                          </div>
+                        </div>  
+                        <p class="font-bold h-[80px] text-description-small flex items-center">
+                            Matheus Fernandes em apoio a sua comunidade visita familias da comunidade no Rio de Janeiro
+                        </p>
+                        <p class="text-p text-sm">
+                          O vereador Matheus Fernandes, acompanhado da primeira dama, Janja Lula da Silva, recebeu, 
+                          na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                          ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                          Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+  
+                  <div>
+                    <div class="bg-white h-12 w-full rounded-t-2xl">
+                      <div class="flex justify-between items-center h-12 px-3">
+                        <div class="flex items-center justify-center">
+                           <!-- <img src="images/photo-profile-parliamentary/photo-parliamentary.jpg" class="h-8 w-8 rounded-full object-cover" alt=""> -->
+                           <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                            <i class="fa-thin fa-user-tie-hair text-xl md:text-[200px]"></i>
+                          </div>
+                        
+                          
+                          <div class="ml-2">
+                            <p class="text-graylight text-xs font-bold">
+                                Matheus Fernandes
+                            </p>
+                            <p class="text-graylight text-[10px]">
+                              25/12/2023
+                            </p>
+                          </div>
+                        </div>
+                        <div>
+                          <i class="fa-solid fa-ellipsis text-graylight"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card border-0 shadow-2xl">
+                       <!-- <img class="photo-gallery" src="images/social-media-politic/social-media-default-1.jpeg" alt="Animated Card Hover Effect Html & CSS"> -->
+                       <div class="h-full w-full bg-primary-200 flex items-center justify-center">
+                        <i class="fa-thin fa-image text-7xl"></i>
+                       </div>
+                      <div class="intro">
+                        <div class="flex justify-between pt-3">
+                          <div class="flex gap-x-4">
+                            <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                            <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                            <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+        
+                          </div>
+                          <div>
+                            <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                          </div>
+                        </div>  
+                        <p class="font-bold h-[80px] text-description-small flex items-center">
+                            Matheus Fernandes lança programa de alfabetização com investimento de mais de R$ 2 bilhões
+                        </p>
+                        <p class="text-p text-sm">
+                          O vereador Matheus Fernandes, acompanhado da primeira dama, Janja Lula da Silva, recebeu, 
+                          na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                          ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                          Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute px-4 top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white">
+                <i class="fa-solid fa-chevron-left text-white"></i>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="absolute px-4 top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <i class="fa-solid fa-chevron-right text-white"></i>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+          </div>
+          <div class="grid-gallery-photos slide-in-bottom">
+            <div clas="">
+              <div class="bg-white h-12 w-full rounded-t-2xl">
+                <div class="flex justify-between items-center h-12 px-3">
+                  <div class="flex items-center justify-center">
+                    <img src="images/psdb/foto.jpg" class="h-8 w-8 rounded-full object-cover" alt="">
+                    <!-- <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                     <i class="fa-thin fa-user-tie-hair text-xl"></i>
+                   </div> -->  
+                   <div class="ml-2">
+                     <p class="text-graylight text-xs font-bold">
+                        Matheus Fernandes
+                     </p>
+                     <p class="text-graylight text-[10px]">
+                       25/12/2023
+                     </p>
+                   </div>
+                 </div>
+                  <div>
+                    <i class="fa-solid fa-ellipsis text-graylight"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-2xl">
+                <!-- <div class="photo-gallery bg-secundary-100 flex justify-center items-center">
+                  <i class="fa-thin fa-image text-7xl -mt-20"></i>
+                </div> -->
+                <img class="photo-gallery" src="images/psdb/pic_2.jpeg" alt="Animated Card Hover Effect Html & CSS">
+                <div class="intro">
+                  <div class="flex justify-between pt-3">
+                    <div class="flex gap-x-4">
+                      <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                      <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                      <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+  
+                    </div>
+                    <div>
+                      <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                    </div>
+                  </div>  
+                  <p class="font-bold h-[80px] text-description-extra-small flex items-center">
+                    Matheus Fernandes anuncia os grupos de adoção selecionados pelo edital de emendas parlamentares
+                  </p>
+                  <p class="text-p text-sm">
+                    O vereador Matheus Fernandes, acompanhado da primeira dama, Janja Lula da Silva, recebeu, 
+                    na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                    ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                    Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:mt-10">
+              <div class="bg-white h-12 w-full rounded-t-2xl">
+                <div class="flex justify-between items-center h-12 px-3">
+                  <div class="flex items-center justify-center">
+                      <img src="images/psdb/foto.jpg" class="h-8 w-8 rounded-full object-cover" alt="">
+                      <!-- <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                        <i class="fa-thin fa-user-tie-hair text-xl"></i>
+                      </div> -->
+                    <div class="ml-2">
+                      <p class="text-graylight text-xs font-bold">
+                        Matheus Fernandes
+                      </p>
+                      <p class="text-graylight text-[10px]">
+                        14/11/2023
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-ellipsis text-graylight"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-2xl">
+                <!-- <div class="photo-gallery bg-secundary-100 flex justify-center items-center">
+                  <i class="fa-thin fa-image text-7xl -mt-20"></i>
+                </div> -->
+                <img class="photo-gallery" src="images/psdb/pic_3.jpg" alt="Animated Card Hover Effect Html & CSS">
+                <div class="intro">
+                  <div class="flex justify-between pt-3">
+                    <div class="flex gap-x-4">
+                      <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                      <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                      <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+  
+                    </div>
+                    <div>
+                      <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                    </div>
+                  </div>  
+                  <p class="font-bold h-[80px] text-description-extra-small flex items-center">
+                    Matheus Fernandes  reinaugura Complexo Esportivo Beija Flor, no Ceará
+                  </p>
+                  <p class="text-p text-sm">
+                    O vereador Matheus Fernandes, acompanhado da primeira dama, Janja Lula da Silva, recebeu, 
+                    na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                    ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                    Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="bg-white h-12 w-full rounded-t-2xl">
+                <div class="flex justify-between items-center h-12 px-3">
+                  <div class="flex items-center justify-center">
+                    <img src="images/psdb/foto.jpg" class="h-8 w-8 rounded-full object-cover" alt="">
+                    <!-- <div class="image-parliamentary-extra-small bg-secundary-100 flex justify-center items-center">
+                      <i class="fa-thin fa-user-tie-hair text-xl"></i>
+                    </div> -->
+                    <div class="ml-2">
+                      <p class="text-graylight text-xs font-bold">
+                        Matheus Fernandes
+                      </p>
+                      <p class="text-graylight text-[10px]">
+                        25/12/2023
+                      </p>
+                    </div>
+                  </div>
+                  <div>
+                    <i class="fa-solid fa-ellipsis text-graylight"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card border-0 shadow-2xl">
+                <!-- <div class="photo-gallery bg-secundary-100 flex justify-center items-center">
+                  <i class="fa-thin fa-image text-7xl -mt-20"></i>
+                </div> -->
+                <img class="photo-gallery" src="images/psdb/pic_4.jpg" alt="Animated Card Hover Effect Html & CSS">
+                <div class="intro">
+                  <div class="flex justify-between pt-3">
+                    <div class="flex gap-x-4">
+                      <i class="fa-solid fa-heart text-primary-100 text-lg"></i>
+                      <i class="fa-regular fa-comment text-graylight text-lg"></i>
+                      <i class="fa-regular fa-paper-plane-top text-graylight text-base ml-0.5 rotate-[-45deg] -mt-0.5"></i>
+  
+                    </div>
+                    <div>
+                      <i class="fa-sharp fa-solid fa-bookmark text-secundary-100 text-lg"></i>
+                    </div>
+                  </div>  
+                  <p class="font-bold h-[80px] text-description-extra-small flex items-center">
+                    Matheus Fernandes lança programa de alfabetização com investimento de mais de R$ 2 bilhões
+                  </p>
+                  <p class="text-p text-sm">
+                    O vereador Matheus Fernandes, acompanhado de sua esposa, recebeu, 
+                    na tarde desta terça-feira (14), as senhoras Michelle Bachelet, ex-presidenta do Chile e da UNASUL e 
+                    ex-alta comissária da ONU para Direitos Humanos; Laura Chinchilla, ex-presidenta da Costa Rica; e 
+                    Aminata Touré, ex-primeira-ministra do Senegal. A visita se deu por ocasião ...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="section_testimonials" class="section landing-page-section gradient-4 relative overflow-hidden">
+      <img src="images/backgrounds/background-wave1.png" class="background-waves-2-top rotate-180 z-10" alt="background-poligonos">
+      <img src="images/backgrounds/background-wave2.png" class="background-waves-2-top rotate-180" alt="background-poligonos">
+      <img src="images/backgrounds/background-grid.png" alt="background-grid z-10" class="background-grid">
+      <img src="images/backgrounds/lines-2.png" class="background-lines-2 z-10" alt="background-lines" >
+      <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+      <div class="block absolute right-6 lg:right-10 top-6 lg:top-10 z-40">
+        <div class="flex items-center text-right text-white gap-x-3">
+          <div>
+            <p class="font-bold text-sm">Matheus Fernandes </p>
+            <p class=" text-sm">00000 - PSDB</p>
+          </div>
+          <!-- <div class="image-parliamentary-small bg-secundary-100 flex justify-center items-center" data-popover-target="popover-requerimentss">
+            <i class="fa-thin fa-user-tie-hair text-xl lg:text-2xl"></i>
+          </div> -->
+    
+                <div data-popover id="popover-requerimentss" role="tooltip" class="absolute z-50 invisible inline-block md:hidden text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex flex-col items-start">
+                          <h5 class="font-semibold text-graylight dark:text-white mb-2">Siga nas Redes Sociais</h5>
+                          <div class="flex space-x-1.5">
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#0866FF] to-[#123979]">
+                                <a class="floating-link" href="https://facebook.com/"> <i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#C408B8] via-[#FF3F32] to-[#FFC600]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-black to-[#242424]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#4AAE20] to-[#51ce1b]">
+                                <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                          </div>
+                        <div class="flex items-center border-t-2 border-b-2 py-2 my-5 w-full">
+                          <div class="fab-icon-holder bg-primary-100">
+                            <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-solid fa-copy"></i></a>
+                        </div>
+                          <h5 class="font-semibold text-graylight dark:text-white ml-3">Copiar Link</h5>
+                        </div>
+                        <h5 class="font-semibold text-graylight dark:text-white mb-2">Escanei o QR CODE</h5>
+                        <img src="images/qr-code/qr-code-black.png " class="w-80" alt="">
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+          <img src="images/psdb/foto.jpg" class="image-parliamentary-small" alt="image-parliamentary-small">
+        </div>
+      </div>
+      <div class="section-inner z-50 text-white ">
+        <div class="section-galery-parliamentary z-30">
+          <div class="-mt-32 md:mt-0 lg:-mt-10 text-white">
+            <h2 class="text-description-medium  flex justify-start slide-in-left  z-30">
+              DEPOIMENTOS
+            </h2>
+            <div class="rectangle-detail slide-in-left "></div>
+          </div>
+          <p class="mb-5 -mt-5 text-description-small slide-in-left ">Nesta seção, os cidadãos compartilham suas histórias, oferecendo uma visão direta das necessidades e aspirações da comunidade.</p>
+
+
+          <div id="controls-carousel" class="relative w-full slide-in-bottom" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-[540px] overflow-hidden rounded-2xl md:h-[800px] lg:h-96">
+                <!-- Item 1 -->
+                
+                <!-- Item 2 -->
+              
+                <!-- Item 3 -->
+          
+                <!-- Item 4 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="bg-white w-full h-full flex flex-col lg:flex-row lg:px-20 justify-center items-center">
+                    <div class="lg:w-1/4 relative">
+                      <div class="flex justify-center items-center">
+                        <!-- <div class="bg-secundary-100 w-20 h-20 lg:w-36 lg:h-36 rounded-full flex items-center justify-center">
+                          <i class="fa-thin fa-user-tie-hair text-4xl"></i>
+                        </div> -->
+                        <img src="images/psdb/pic_5.jpeg" class="w-20 h-20 lg:w-36 lg:h-36 rounded-full object-cover object-center z-10" alt="">
+            
+                      </div>
+                      <p class="text-primary-200 mt-5 font-bold flex flex-row items-center justify-center">Helena Matos Sobreiro</p>
+                      <p class="text-graylight uppercase text-xs flex items-center justify-center text-center">Auxiliar Administrativa</p>
+                      <div class="flex items-center justify-center mt-5 space-x-2">
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                      </div>
+                    </div>
+                    <div class="text-graylight mx-[70px] lg:mx-10 text-sm lg:w-3/4 h-72 overflow-y-scroll md:h-max md:overflow-visible mt-5 lg:mt-0">
+                      <div class="mb-3 lg:mb-0">
+
+                        <i class="fa-duotone fa-quote-left text-primary-100 opacity-45 text-4xl "></i>
+                      </div>
+                      <p class="lg:px-10 mr-2 lg:mr-0 leading-relaxed">[...] 
+                          Matheus Fernandes tem sido um grande apoio para mim e outros agricultores familiares. Sua defesa incansável por políticas que fortalecem nossa profissão nos ajudou a enfrentar desafios e a prosperar. Com sua intervenção, obtivemos acesso a programas de subsídios e treinamentos agrícolas essenciais, além de incentivos fiscais que impulsionaram nossa produtividade. Sua presença constante em nossa comunidade e sua disposição para ouvir nossas preocupações demonstram um compromisso genuíno com nosso bem-estar e sucesso. 
+                      </p>
+                      <div class="flex justify-end mr-2 lg:mr-0">
+
+                        <i class="fa-duotone fa-quote-right text-primary-100 opacity-45 text-4xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 5 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <div class="bg-white w-full h-full flex flex-col lg:flex-row lg:px-20 justify-center items-center">
+                    <div class="lg:w-1/4 relative">
+                      <div class="flex justify-center items-center">
+                        <!-- <div class="bg-secundary-100 w-20 h-20 lg:w-36 lg:h-36 rounded-full flex items-center justify-center">
+                          <i class="fa-thin fa-user-tie-hair text-4xl"></i>
+                        </div> -->
+                        <img src="images/psdb/pic_6.jpeg" class="w-20 h-20 lg:w-36 lg:h-36 rounded-full object-cover object-center z-10" alt="">
+            
+                      </div>
+                      <p class="text-primary-200 mt-5 font-bold flex flex-row items-center justify-center">Julio Pedrosa</p>
+                      <p class="text-graylight uppercase text-xs flex items-center justify-center text-center">PECUARISTA</p>
+                      <div class="flex items-center justify-center mt-5 space-x-2">
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                        <i class="fa-solid fa-star text-secundary-100"></i>
+                      </div>
+                    </div>
+                    <div class="text-graylight mx-[70px] lg:mx-10 text-sm lg:w-3/4 h-72 overflow-y-scroll md:h-max md:overflow-visible mt-5 lg:mt-0">
+                      <div class="mb-3 lg:mb-0">
+
+                        <i class="fa-duotone fa-quote-left text-primary-100 opacity-45 text-4xl "></i>
+                      </div>
+                      <p class="lg:px-10 mr-2 lg:mr-0 leading-relaxed">[...] 
+                          Matheus Fernandes tem sido um grande apoio para mim e outros agricultores familiares. Sua defesa incansável por políticas que fortalecem nossa profissão nos ajudou a enfrentar desafios e a prosperar. Com sua intervenção, obtivemos acesso a programas de subsídios e treinamentos agrícolas essenciais, além de incentivos fiscais que impulsionaram nossa produtividade. Sua presença constante em nossa comunidade e sua disposição para ouvir nossas preocupações demonstram um compromisso genuíno com nosso bem-estar e sucesso. 
+                      </p>
+                      <div class="flex justify-end mr-2 lg:mr-0">
+
+                        <i class="fa-duotone fa-quote-right text-primary-100 opacity-45 text-4xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute px-4 top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-prev>
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white">
+                <i class="fa-solid fa-chevron-left text-white"></i>
+                  <span class="sr-only">Previous</span>
+              </span>
+          </button>
+          <button type="button" class="absolute px-4 top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none" data-carousel-next>
+              <span class="inline-flex items-center justify-center w-9 h-9 rounded-full bg-secundary-100  group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                <i class="fa-solid fa-chevron-right text-white"></i>
+                  <span class="sr-only">Next</span>
+              </span>
+          </button>
+          </div>
+
+         
+        </div>
+      </div>
+    </section>
+    
+    <section id="section_legislative_production" class="section landing-page-section gradient-5 relative overflow-hidden">
+      <img src="images/backgrounds/background-wave1.png" class="background-waves-2-top rotate-180 z-10" alt="background-poligonos">
+      <img src="images/backgrounds/background-wave2.png" class="background-waves-2-top rotate-180" alt="background-poligonos">
+      <img src="images/backgrounds/background-grid.png" alt="background-grid z-10" class="background-grid">
+      <img src="images/backgrounds/lines-2.png" class="background-lines-2 z-10" alt="background-lines" >
+      <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+      <div class="block absolute right-6 lg:right-10 top-6 lg:top-10 z-40">
+        <div class="flex items-center text-right text-white gap-x-3">
+          <div>
+            <p class="font-bold text-sm">Matheus Fernandes </p>
+            <p class=" text-sm">00000 - PSDB</p>
+          </div>
+          <!-- <div class="image-parliamentary-small bg-secundary-100 flex justify-center items-center" data-popover-target="popover-profile-mobile-2">
+            <i class="fa-thin fa-user-tie-hair text-xl lg:text-2xl"></i>
+          </div> -->
+    
+                <div data-popover id="popover-profile-mobile-2" role="tooltip" class="absolute z-50 invisible inline-block md:hidden text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:bg-gray-800 dark:border-gray-600">
+                  <div class="w-full bg-white rounded-lg shadow dark:bg-gray-800 p-4">
+                    <div class="flex justify-between">
+                      <div class="flex flex-col items-start">
+                          <h5 class="font-semibold text-graylight dark:text-white mb-2">Siga nas Redes Sociais</h5>
+                          <div class="flex space-x-1.5">
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#0866FF] to-[#123979]">
+                                <a class="floating-link" href="https://facebook.com/"> <i class="fa fa-facebook"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#C408B8] via-[#FF3F32] to-[#FFC600]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa fa-instagram"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-black to-[#242424]">
+                                <a class="floating-link" href="https://instagram.com/"> <i class="fa-brands fa-x-twitter"></i></a>
+                            </div>
+                            <div class="fab-icon-holder bg-gradient-to-b from-[#4AAE20] to-[#51ce1b]">
+                                <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                          </div>
+                        <div class="flex items-center border-t-2 border-b-2 py-2 my-5 w-full">
+                          <div class="fab-icon-holder bg-primary-100">
+                            <a class="floating-link" href="https://linkedin.com/in/"> <i class="fa-solid fa-copy"></i></a>
+                        </div>
+                          <h5 class="font-semibold text-graylight dark:text-white ml-3">Copiar Link</h5>
+                        </div>
+                        <h5 class="font-semibold text-graylight dark:text-white mb-2">Escanei o QR CODE</h5>
+                        <img src="images/qr-code/qr-code-black.png " class="w-80" alt="">
+                      </div>
+                    </div>
+                    <!-- Radial Chart -->
+
+                  </div>
+                  <div data-popper-arrow></div>
+                </div>
+          <img src="images/psdb/foto.jpg" class="image-parliamentary-small" alt="image-parliamentary-small">
+        </div>
+      </div>
+      <div class="section-inner z-50 text-white ">
+        <div class="section-galery-parliamentary-2 z-30">
+          <div class="flex flex-col md:flex-row items-start md:items-center md:justify-between w-full -mt-20 md:-mt-32 lg:-mt-10">
+            <div class=" text-white">
+              <h2 class="text-description-medium  flex justify-start slide-in-left  z-30">
+                PROPOSTAS LEGISLATIVAS
+              </h2>
+              <div class="rectangle-detail slide-in-left "></div>
+            </div>
+            <div class="-mt-8 hidden lg:flex justify-center ">
+              <button class="bg-secundary-100 lg:px-6 py-3 rounded-lg font-bold">
+                <i class="fa-solid fa-note mr-2"></i>VEJA MAIS PROPOSTAS
+              </button>
+            </div>
+
+          </div>
+          <p class="mb-5 -mt-6 slide-in-left">Mantenha-se informado e envolvido nas decisões que moldam nosso futuro, acompanhando de perto algumas das propostas legislativas do seu candidato.</p>
+    
+          <div class="grid-gallery-photos-2 mt-1 slide-in-bottom">
+            <div class="space-y-5 h-[380px] md:h-full overflow-y-scroll md:overflow-visible">
+
+              <div class="flex justify-center items-center">
+               <div class="flex justify-center items-center border-4 border-white bg-secundary-100 h-10 w-10 rounded-full z-20">
+                <p class="text-white text-2xl font-black">1</p>
+               </div>
+               <div class="w-full  bg-white rounded-3xl -ml-5 z-0 px-10 py-5 lg:py-5">
+                <p class="text-primary-100 uppercase font-bold mb-2">Lei das Ciclovias - Bicicletas</p>
+                <p class="text-graylight text-sm lg:text-xs 2xl:text-sm">Proporei a implementação de mais quilômetros de ciclovias, garantindo assim a segurança e mobilidade dos ciclistas. Além disso, buscarei parcerias com empresas locais para a criação de estações de aluguel de bicicletas, incentivando ...</p>
+               </div>
+              </div>
+  
+              <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center border-4 border-white bg-secundary-100 h-10 w-10 rounded-full z-20">
+                 <p class="text-white text-2xl font-black">2</p>
+                </div>
+                <div class="w-full  bg-white rounded-3xl -ml-5 z-0 px-10  py-5 lg:py-5">
+                 <p class="text-primary-100 uppercase font-bold mb-2">Planejamento da Cidade</p>
+                 <p class="text-graylight text-sm lg:text-xs 2xl:text-sm">Proponho a criação de um plano diretor que contemple o crescimento ordenado, a preservação de áreas verdes e a promoção de espaços públicos de convívio. Com a participação ativa da comunidade, buscarei soluções inovadoras ...</p>
+                </div>
+              </div>
+  
+              <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center border-4 border-white bg-secundary-100 h-10 w-10 rounded-full z-20">
+                 <p class="text-white text-2xl font-black">3</p>
+                </div>
+                <div class="w-full  bg-white rounded-3xl -ml-5 z-0 px-10  py-5 lg:py-5">
+                 <p class="text-primary-100 uppercase font-bold mb-2">Código Ambiental e Meio Ambiente</p>
+                 <p class="text-graylight text-sm lg:text-xs 2xl:text-sm">Como vereador, defenderemos a implementação de um código ambiental mais robusto, com medidas eficazes para proteger nossos recursos naturais. Incentivarei práticas sustentáveis nas empresas locais, promovendo ...</p>
+                </div>
+              </div> 
+
+              <div class="flex justify-center items-center">
+                <div class="flex justify-center items-center border-4 border-white bg-secundary-100 h-10 w-10 rounded-full z-20">
+                 <p class="text-white text-2xl font-black">4</p>
+                </div>
+                <div class="w-full  bg-white rounded-3xl -ml-5 z-0 px-10  py-5 lg:py-5">
+                 <p class="text-primary-100 uppercase font-bold mb-2">Código Ambiental e Meio Ambiente</p>
+                 <p class="text-graylight text-sm lg:text-xs 2xl:text-sm">Como vereador, defenderemos a implementação de um código ambiental mais robusto, com medidas eficazes para proteger nossos recursos naturais. Incentivarei práticas sustentáveis nas empresas locais, promovendo ...</p>
+                </div>
+              </div> 
+   
+            </div>
+          </div>
+          <div class="mt-10 flex lg:hidden justify-center w-full">
+            <button class="bg-secundary-100 w-full lg:px-6 py-3 rounded-lg font-bold">
+              <i class="fa-solid fa-note mr-2"></i>VEJA MAIS PROPOSTAS
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section_text_end" class="section landing-page-section gradient-6 relative overflow-hidden">
+      <img src="images/backgrounds/background-poligones.png" class="background-poligones" alt="background-poligonos">
+      <img src="images/backgrounds/background-wave2.png" class="background-waves-2-top rotate-180" alt="background-poligonos">
+      <img src="images/backgrounds/lines-1.png" class="background-lines-1 rotate-180" alt="background-lines" >
+      <img src="images/backgrounds/background_mobile.png" class="background-mobile" alt="background-mobile">
+      <div class="section-inner z-50 text-white ">
+        <div class="section-photo-profile z-50">
+          <div class="h-max relative slide-in-left">
+            <img src="images/psdb/foto.jpg" class="image-parliamentary" alt="foto-parlamentar">
+            <!-- <div class="image-parliamentary bg-secundary-100 flex justify-center items-center">
+              <i class="fa-thin fa-user-tie-hair text-7xl md:text-[200px]"></i>
+            </div> -->
+            <img src="images/backgrounds/detail-circles-parliamentary.svg" class="detail-circle-parliamentary" alt="detail-circles-parliamentary" id="rotatingImage">
+            <img src="images/logos-political-parties/logo_party_psdb.jpg" class="detail-politic-party" alt="detail-politic-party">
+            <div class="absolute bottom-0 z-50 flex justify-center w-full left-1/2 transform -translate-x-1/2">
+              <div class="flex flex-col justify-center items-center bg-white py-2 px-8 lg:px-12 lg:py-3 rounded-full shadow-lg">
+                <p class="text-primary-100 text-xl md:text-5xl lg:text-5xl 2xl:text-6xl font-bold">00000</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+          <div class="section-text-profile slide-in-bottom ">
+            <div class="space-y-5 mr-2">
+              <p class="pt-14 slide-in-bottom leading-relaxed">
+                Caro(a) Eleitor(a)
+              </p>
+              <p class="slide-in-bottom leading-relaxed">
+                É com imensa gratidão e satisfação que me dirijo a você neste momento. Hoje, quero expressar meu profundo agradecimento por todo o apoio, confiança e dedicação que recebi de cada um de vocês.          
+              </p>
+              <p class="slide-in-bottom leading-relaxed">
+                Esta jornada foi marcada por desafios e aprendizados, mas a força que emanou de nossa comunidade foi verdadeiramente inspiradora. Vocês, eleitores dedicados, foram a fonte do meu impulso e determinação, alimentando a chama da esperança por um futuro melhor para todos nós.          
+              </p>
+              <p class="slide-in-bottom leading-relaxed">
+                Agradeço por confiarem em mim e por serem parte fundamental desta jornada. Contem sempre comigo e com minha equipe para representá-los da melhor forma possível.         
+              </p>
+              <p class="slide-in-bottom leading-relaxed">
+                Com respeito e gratidão,         
+              </p>
+              <p class="slide-in-bottom leading-relaxed text-2xl">
+                Matheus Fernandes        
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+  </div>
+  
+  
+<!--   
+  <div  class="block fixed right-6 top-7 lg:top-10 z-40 space-x-7 md:hidden">
+    <i class="fa-light fa-qrcode text-white text-2xl" data-popover-target="popover-qrcode" data-popover-placement="bottom"></i>
+    <div data-popover id="popover-qrcode" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-primary-300 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+      <img src="images/qr-code/qr-code.png" alt="" class="w-24 h-24 p-3">
+      <div class="bg-secundary-100" data-popper-arrow></div>
+  </div>
+    <i class="fa-light fa-share-nodes text-white text-2xl m"></i>
+  </div> -->
+  <div>
+    <img src="images/logo-intgest/logo.png" alt="" class="block fixed left-6 top-5 lg:top-10 w-12 lg:w-16 z-40">
+  </div>
+  <div class=" fixed left-6 bottom-6 z-40 hidden md:block">
+    <div class="bg-secundary-100 rounded-md">
+      <img src="images/qr-code/qr-code.png" alt="" class="w-24 h-24 p-1">
+    </div>
+  </div>
+
+  <div class="floating-scrollspy floating-scrollspy-background">
+    <ul class="nav">
+      <li class="nav-item" data-popover-target="popover-section-parliamentary-profile" data-popover-placement="right">
+        <a class="nav-link" href="#section_parliamentary_profile"><i class="fa-duotone fa-user-tie text-lg lg:text-2xl text-primary-200"></i></a>
+        <div data-popover id="popover-section-parliamentary-profile" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+            <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+                <h3 class="font-bold text-white text-xs uppercase">Perfil e Biografia</h3>
+            </div>
+            <div class="bg-secundary-100" data-popper-arrow></div>
+        </div>
+    </li>
+    <li class="nav-item" data-popover-target="popover-section-legislative-productions" data-popover-placement="right">
+      <a class="nav-link" href="#section_legislative_productions"><i class="fa-duotone fa-briefcase text-lg lg:text-2xl text-primary-200"></i></a>
+      <div data-popover id="popover-section-legislative-productions" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+            <h3 class="font-bold text-white text-xs uppercase">Produções Legislativas</h3>
+        </div>
+        <div class="bg-secundary-100" data-popper-arrow></div>
+      </div>
+    </li>
+    <li class="nav-item" data-popover-target="popover-section-galery-parliamentary" data-popover-placement="right">
+      <a class="nav-link" href="#section_galery_parliamentary"><i class="fa-duotone fa-images text-lg lg:text-2xl text-primary-200"></i> </a>
+      <div data-popover id="popover-section-galery-parliamentary" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+            <h3 class="font-bold text-white text-xs uppercase">Galeria de Fotos</h3>
+        </div>
+        <div class="bg-secundary-100" data-popper-arrow></div>
+      </div>
+    </li>
+    <li class="nav-item" data-popover-target="popover-section-testimonials" data-popover-placement="right">
+      <a class="nav-link" href="#section_testimonials"> <span>#section_testimonials</span> <i class="fa-duotone fa-screen-users text-lg lg:text-2xl text-primary-200"></i>> </a>
+      <div data-popover id="popover-section-testimonials" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+            <h3 class="font-bold text-white text-xs uppercase">Depoimentos</h3>
+        </div>
+        <div class="bg-secundary-100" data-popper-arrow></div>
+      </div>
+    </li>
+    <li class="nav-item" data-popover-target="popover-section-legislative-production" data-popover-placement="right">
+      <a class="nav-link" href="#section_legislative_production"> <span>#section_legislative_production</span> <i class="fa-duotone fa-file-certificate text-lg lg:text-2xl text-primary-200"></i> </a>
+      <div data-popover id="popover-section-legislative-production" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+            <h3 class="font-bold text-white text-xs uppercase">Propostas Legislativas</h3>
+        </div>
+        <div class="bg-secundary-100" data-popper-arrow></div>
+      </div>
+    </li>
+    <li class="nav-item" data-popover-target="popover-section-text-end" data-popover-placement="right">
+        <a class="nav-link" href="#section_text_end"> <span>#section_invitationy</span> <i class="fa-duotone fa-check-to-slot text-lg lg:text-2xl text-primary-200"></i> </a>
+        <div data-popover id="popover-section-text-end" role="tooltip" class="absolute whitespace-nowrap z-10 invisible inline-block text-sm text-gray-500 transition-opacity duration-300 bg-secundary-100 border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+          <div class="px-3 py-3 bg-secundary-100 rounded-full flex items-center justify-center">
+              <h3 class="font-bold text-white text-xs uppercase">Agradecimentos</h3>
+          </div>
+          <div class="bg-secundary-100" data-popper-arrow></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <script>
+    $(document).ready(function(){
+      /* Uses counterup.js */
+       $('.counter').counterUp({
+         delay: 20,
+         time: 2000
+       });
+       
+       /* Uses waypoints.js */
+       $('.graph').waypoint(function() {
+         $('.graph').addClass('grow');
+       }, { offset: '100%' });
+     });
+  </script>
+  <script>
+    const people = [
+        { name: 'John Doe', profession: 'Designer', testimony: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', image: 'https://via.placeholder.com/150' },
+        { name: 'Jane Smith', profession: 'Developer', testimony: 'Praesent vel suscipit lacus. Vestibulum et metus magna.', image: 'https://via.placeholder.com/150' },
+        // Adicione mais pessoas conforme necessário
+      ];
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const peopleContainer = document.getElementById('people-container');
+        const dialog = document.getElementById('dialog');
+        const dialogContent = document.getElementById('dialog-content');
+
+        people.forEach((person, index) => {
+          const personDiv = document.createElement('div');
+          personDiv.classList.add('absolute');
+          personDiv.style.top = `${Math.floor(Math.random() * window.innerHeight)}px`;
+          personDiv.style.left = `${Math.floor(Math.random() * window.innerWidth)}px`;
+
+          const img = document.createElement('img');
+          img.classList.add('w-16', 'h-16', 'rounded-full', 'cursor-pointer', 'animate-float');
+          img.src = person.image;
+          img.alt = person.name;
+          img.addEventListener('click', () => {
+            stopAnimation(personDiv);
+            showDialog(person);
+          });
+
+          personDiv.appendChild(img);
+          peopleContainer.appendChild(personDiv);
+
+          setInterval(() => {
+            movePerson(personDiv);
+          }, 1000 / 24);
+        });
+
+        function movePerson(personDiv) {
+          const directionX = Math.random() > 0.5 ? 5 : -5;
+          const directionY = Math.random() > 0.5 ? 5 : -5;
+
+          const currentTop = parseInt(personDiv.style.top, 10);
+          const currentLeft = parseInt(personDiv.style.left, 10);
+
+          personDiv.style.top = `${currentTop + directionY}px`;
+          personDiv.style.left = `${currentLeft + directionX}px`;
+        }
+
+        function stopAnimation(personDiv) {
+          clearInterval(personDiv.intervalId);
+        }
+
+        function showDialog(person) {
+          dialogContent.innerHTML = `
+            <p class="text-lg font-semibold">${person.name}</p>
+            <p class="text-sm text-gray-500">${person.profession}</p>
+            <p class="text-sm mt-4">${person.testimony}</p>
+          `;
+          dialog.classList.remove('hidden');
+
+          setTimeout(() => {
+            dialog.classList.add('hidden');
+          }, 5000);
+        }
+      });
+
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Função para rotacionar a imagem
+      function rotateImage() {
+        var rotatingImage = document.getElementById("rotatingImage");
+        rotatingImage.style.transform = "rotate(360deg)"; // Girar 360 graus
+      }
+  
+      // Chama a função de rotação após a página ser totalmente carregada
+      rotateImage();
+    });
+  </script>
+</body>
+</html>
